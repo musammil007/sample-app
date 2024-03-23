@@ -1,12 +1,12 @@
-<div class="container text-center">
+<div class="container text-center" style="width: 50%;">
     <img src="assets/sample.png" alt="" width="100" height="100">
 
-    <form>
-        <div class="d-flex justify-center">
+    <form class="d-flex justify-content-center mt-5">
+        <div>
             <div class="mb-3 d-flex">
                 <input type="text" name="todoValue" id="todoValue" placeholder="Add Value"
                        class="form-control" (keyup.enter)="addItem()" [(ngModel)]="todoValue">
-                <button class="btn btn-primary ms-2" (click)="addItem()" [disabled]="!todoValue">Add Item</button>
+                <button class="btn btn-primary ms-2" (click)="addItem()" [disabled]="!todoValue">Add</button>
             </div>
             <ul>
                 <li *ngFor="let item of todoList">
